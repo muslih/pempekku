@@ -1,0 +1,787 @@
+/*******************************************************************************
+
+Title: paduhost
+Date: 19 Juni 2013
+Author: Zeen Studio (http://zeen-studio.com)
+
+********************************************************************************
+
+	1  zeengrid
+	2  general
+	3  header
+	4  section
+	5  aside
+	6  footer
+	7  fontawesome
+	8  responsive
+
+*******************************************************************************/
+/*******************************************************************************/
+/*     1. Zeengrid
+/*******************************************************************************/
+article,
+aside,
+footer,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  background: #fff;
+  /* 1 */
+  color: #000;
+  /* 2 */
+  font-family: sans-serif;
+  /* 3 */
+  -ms-text-size-adjust: 100%;
+  /* 4 */
+  -webkit-text-size-adjust: 100%;
+  /* 4 */
+}
+
+body {
+  margin: 0;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.bungkus {
+  padding: 0 15px;
+  position: relative;
+  *zoom: 1;
+}
+.bungkus:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.baris {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 978px;
+  *zoom: 1;
+}
+.baris:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="zeen"] {
+  float: left;
+  display: inline;
+  min-height: 1px;
+  position: relative;
+  margin-left: 3.09091%;
+}
+[class*="zeen"]:first-child {
+  margin-left: 0;
+}
+
+.zeen-1 {
+  width: 5.5%;
+}
+
+.zeen-2 {
+  width: 14.09091%;
+}
+
+.zeen-3 {
+  width: 22.68182%;
+}
+
+.zeen-4 {
+  width: 31.27273%;
+}
+
+.zeen-5 {
+  width: 39.86364%;
+}
+
+.zeen-6 {
+  width: 48.45455%;
+}
+
+.zeen-7 {
+  width: 57.04545%;
+}
+
+.zeen-8 {
+  width: 65.63636%;
+}
+
+.zeen-9 {
+  width: 74.22727%;
+}
+
+.zeen-10 {
+  width: 82.81818%;
+}
+
+.zeen-11 {
+  width: 91.40909%;
+}
+
+.zeen-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .baris {
+    max-width: 767px;
+  }
+  .baris [class*="zeen"] {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/*******************************************************************************/
+/*     general
+/*******************************************************************************/
+.kanan, nav {
+  float: right;
+}
+
+.kiri, .logo {
+  float: left;
+}
+
+.tkanan {
+  text-align: right;
+}
+
+.judul {
+  font-family: "Muli", sans-serif;
+}
+
+/*******************************************************************************/
+/*     header & slide
+/*******************************************************************************/
+header {
+  position: relative;
+}
+
+nav {
+  margin: 35px 0;
+}
+nav li {
+  float: left;
+  list-style: none;
+}
+nav a {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  font-size: 13px;
+  font-family: "Muli", sans-serif;
+  display: block;
+  color: #444444;
+  padding: 15px 10px;
+  list-style: none;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #aa0000;
+}
+nav a.active {
+  background: #aa0000;
+  color: #fff;
+}
+
+#slide {
+  background: #aa0000;
+}
+
+/*******************************************************************************/
+/*     produk
+/*******************************************************************************/
+#slide img {
+  width: 100%;
+}
+
+#produk h2, #paket h2 {
+  color: #aa0000;
+}
+#produk article, #paket article {
+  margin-bottom: 30px;
+}
+#produk article:nth-of-type(4n+1).zeen-3, #paket article:nth-of-type(4n+1).zeen-3 {
+  clear: left;
+  margin-left: 0px;
+}
+#produk article:nth-of-type(6n+1).zeen-2, #paket article:nth-of-type(6n+1).zeen-2 {
+  clear: left;
+  margin-left: 0px;
+}
+#produk article a, #paket article a {
+  Color: #444;
+  text-decoration: none;
+  position: relative;
+}
+#produk article a .thumb, #paket article a .thumb {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-box-shadow: 0 0 10px #848484;
+  -moz-box-shadow: 0 0 10px #848484;
+  box-shadow: 0 0 10px #848484;
+}
+#produk article a .thumb img, #paket article a .thumb img {
+  width: 100%;
+}
+#produk article a:hover, #paket article a:hover {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+#produk article a:hover .thumb, #paket article a:hover .thumb {
+  -webkit-box-shadow: 0 0 10px 1px #444444;
+  -moz-box-shadow: 0 0 10px 1px #444444;
+  box-shadow: 0 0 10px 1px #444444;
+}
+#produk article a h3, #paket article a h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 14px;
+  background: rgba(170, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 5px;
+}
+#produk article a h3 span, #paket article a h3 span {
+  display: block;
+}
+
+/*******************************************************************************/
+/*     aside
+/*******************************************************************************/
+aside, footer {
+  background: #aa0000;
+  color: white;
+  font-size: 13px;
+  line-height: 20px;
+}
+aside section, footer section {
+  background: rgba(93, 0, 0, 0.8);
+  padding: 10px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+/*******************************************************************************/
+/*     footer
+/*******************************************************************************/
+footer {
+  background: #5d0000;
+}
+footer #kredit {
+  text-align: right;
+}
+footer #kredit a {
+  display: inline-block;
+  margin-top: 17px;
+  margin-left: 10px;
+}
+
+/*******************************************************************************/
+/*     font awesome
+/*******************************************************************************/
+/* font-face */
+@font-face {
+  font-family: "GeneralFoundicons";
+  src: url("../font/general_foundicons.eot");
+  src: url("../font/general_foundicons.eot?#iefix") format("embedded-opentype"), url("../font/general_foundicons.woff") format("woff"), url("../font/general_foundicons.ttf") format("truetype"), url("../font/general_foundicons.svg#GeneralFoundicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* global foundicon styles */
+[class*="foundicon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: middle;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+[class*="foundicon-"]:before {
+  font-family: "GeneralFoundicons";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+/* icons */
+.foundicon-settings:before {
+  content: "\f000";
+}
+
+.foundicon-heart:before {
+  content: "\f001";
+}
+
+.foundicon-star:before {
+  content: "\f002";
+}
+
+.foundicon-plus:before {
+  content: "\f003";
+}
+
+.foundicon-minus:before {
+  content: "\f004";
+}
+
+.foundicon-checkmark:before {
+  content: "\f005";
+}
+
+.foundicon-remove:before {
+  content: "\f006";
+}
+
+.foundicon-mail:before {
+  content: "\f007";
+}
+
+.foundicon-calendar:before {
+  content: "\f008";
+}
+
+.foundicon-page:before {
+  content: "\f009";
+}
+
+.foundicon-tools:before {
+  content: "\f00a";
+}
+
+.foundicon-globe:before {
+  content: "\f00b";
+}
+
+.foundicon-home:before {
+  content: "\f00c";
+}
+
+.foundicon-quote:before {
+  content: "\f00d";
+}
+
+.foundicon-people:before {
+  content: "\f00e";
+}
+
+.foundicon-monitor:before {
+  content: "\f00f";
+}
+
+.foundicon-laptop:before {
+  content: "\f010";
+}
+
+.foundicon-phone:before {
+  content: "\f011";
+}
+
+.foundicon-cloud:before {
+  content: "\f012";
+}
+
+.foundicon-error:before {
+  content: "\f013";
+}
+
+.foundicon-right-arrow:before {
+  content: "\f014";
+}
+
+.foundicon-left-arrow:before {
+  content: "\f015";
+}
+
+.foundicon-up-arrow:before {
+  content: "\f016";
+}
+
+.foundicon-down-arrow:before {
+  content: "\f017";
+}
+
+.foundicon-trash:before {
+  content: "\f018";
+}
+
+.foundicon-add-doc:before {
+  content: "\f019";
+}
+
+.foundicon-edit:before {
+  content: "\f01a";
+}
+
+.foundicon-lock:before {
+  content: "\f01b";
+}
+
+.foundicon-unlock:before {
+  content: "\f01c";
+}
+
+.foundicon-refresh:before {
+  content: "\f01d";
+}
+
+.foundicon-paper-clip:before {
+  content: "\f01e";
+}
+
+.foundicon-video:before {
+  content: "\f01f";
+}
+
+.foundicon-photo:before {
+  content: "\f020";
+}
+
+.foundicon-graph:before {
+  content: "\f021";
+}
+
+.foundicon-idea:before {
+  content: "\f022";
+}
+
+.foundicon-mic:before {
+  content: "\f023";
+}
+
+.foundicon-cart:before {
+  content: "\f024";
+}
+
+.foundicon-address-book:before {
+  content: "\f025";
+}
+
+.foundicon-compass:before {
+  content: "\f026";
+}
+
+.foundicon-flag:before {
+  content: "\f027";
+}
+
+.foundicon-location:before {
+  content: "\f028";
+}
+
+.foundicon-clock:before {
+  content: "\f029";
+}
+
+.foundicon-folder:before {
+  content: "\f02a";
+}
+
+.foundicon-inbox:before {
+  content: "\f02b";
+}
+
+.foundicon-website:before {
+  content: "\f02c";
+}
+
+.foundicon-smiley:before {
+  content: "\f02d";
+}
+
+.foundicon-search:before {
+  content: "\f02e";
+}
+
+/*******************************************************************************/
+/*     responsive
+/*******************************************************************************/
+@media only screen and (max-width: 767px) {
+  #logo {
+    display: block;
+    float: none;
+    text-align: center;
+    padding: 25px 0;
+  }
+
+  nav {
+    display: block;
+    float: none;
+  }
+  nav ul {
+    text-align: center;
+  }
+  nav li {
+    float: none;
+    display: inline-block;
+  }
+  nav li a {
+    padding: 30px 5px 20px 5px;
+  }
+
+  #beli {
+    text-align: center;
+  }
+  #beli p {
+    width: 100%;
+    clear: both;
+    margin-bottom: 10px;
+  }
+  #beli button {
+    float: none;
+  }
+
+  #aside {
+    text-align: center;
+    padding-bottom: 0px;
+  }
+  #aside [class*="zeen"] {
+    margin-bottom: 25px;
+  }
+  #aside img {
+    margin: auto auto 15px auto;
+  }
+  #aside i {
+    float: none;
+  }
+  #aside p {
+    margin-left: 0;
+  }
+
+  #footer {
+    padding-bottom: 10px;
+  }
+  #footer p {
+    text-align: center;
+    clear: both;
+    width: 100%;
+  }
+  #footer .kredit {
+    float: none;
+    text-align: center;
+  }
+  #footer .kredit li {
+    margin-top: 15px;
+  }
+}
