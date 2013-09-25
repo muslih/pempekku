@@ -347,7 +347,7 @@ img {
   float: right;
 }
 
-.kiri, .logo {
+.kiri, .logo, #produk a h3 span.beli, #paket a h3 span.beli, #produk a h3 span.detail, #paket a h3 span.detail {
   float: left;
 }
 
@@ -440,6 +440,44 @@ nav a.active {
 #produk a .thumb img, #paket a .thumb img {
   width: 100%;
 }
+#produk a .thumb .beli, #paket a .thumb .beli, #produk a .thumb h3 span.detail, #produk a h3 .thumb span.detail, #paket a .thumb h3 span.detail, #paket a h3 .thumb span.detail {
+  border: 0px solid;
+  background: #444444;
+  color: white;
+  padding: 5px;
+  font-size: 13px;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+  z-index: 99;
+}
+#produk a .thumb .beli:hover, #paket a .thumb .beli:hover, #produk a .thumb h3 span.detail:hover, #produk a h3 .thumb span.detail:hover, #paket a .thumb h3 span.detail:hover, #paket a h3 .thumb span.detail:hover {
+  background: #2b2b2b;
+}
+#produk a .thumb .detail, #paket a .thumb .detail {
+  border: 0px solid;
+  background: #444444;
+  color: white;
+  padding: 5px;
+  font-size: 13px;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0;
+  z-index: 99;
+}
+#produk a .thumb .detail:hover, #paket a .thumb .detail:hover {
+  background: #2b2b2b;
+}
 #produk a:hover, #paket a:hover {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
@@ -451,6 +489,9 @@ nav a.active {
   -moz-box-shadow: 0 0 10px 1px #444444;
   box-shadow: 0 0 10px 1px #444444;
 }
+#produk a:hover .detail, #paket a:hover .detail, #produk a:hover .beli, #paket a:hover .beli, #produk a:hover h3 span.detail, #paket a:hover h3 span.detail {
+  opacity: 1;
+}
 #produk a h3, #paket a h3 {
   color: #fff;
   margin: 0;
@@ -460,10 +501,39 @@ nav a.active {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 15px 5px;
+  padding: 15px 10px;
 }
 #produk a h3 span, #paket a h3 span {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
   display: block;
+  line-height: 20px;
+}
+#produk a h3 span.harga, #paket a h3 span.harga {
+  font-weight: normal;
+}
+#produk a h3 span.harga:before, #paket a h3 span.harga:before {
+  content: "Rp. ";
+}
+#produk a h3 span.beli, #paket a h3 span.beli, #produk a h3 span.detail, #paket a h3 span.detail {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  font-weight: normal;
+  margin-top: 10px;
+  background: #444;
+  padding: 5px;
+  display: none;
+}
+#produk a h3 span.beli:hover, #paket a h3 span.beli:hover, #produk a h3 span.detail:hover, #paket a h3 span.detail:hover {
+  background: black;
+  color: red;
+}
+#produk a h3 span.detail, #paket a h3 span.detail {
+  float: right !important;
 }
 
 /*******************************************************************************/
