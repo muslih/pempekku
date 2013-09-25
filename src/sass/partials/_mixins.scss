@@ -1,0 +1,12 @@
+@mixin tombol($bg:#444,$col:#fff){
+	border: 0px solid;
+	background:$bg;
+	color:$col;
+	padding:5px;
+	font-size:13px;
+	&:hover{
+		background:darken($bg, 10%);
+	}
+}
+
+

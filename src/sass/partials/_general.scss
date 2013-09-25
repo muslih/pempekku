@@ -1,0 +1,228 @@
+/*******************************************************************************/
+/*     general
+/*******************************************************************************/
+.kanan{
+	float:right;
+}
+
+.kiri{
+	float:left;
+}
+
+.tkanan{
+	text-align:right;
+}
+
+.judul{
+	font-family:$defaultFont;
+}
+
+/*******************************************************************************/
+/*     header & slide
+/*******************************************************************************/
+header{
+	// padding:50px 0;
+	position: relative;
+}
+
+.logo{
+	@extend .kiri;
+}
+
+nav{
+	@extend .kanan;
+	margin:30px 0;
+	ul{
+		margin:0;
+	}
+	li{
+		float: left;
+		list-style: none;
+	}
+	a{
+		@include transition-duration(1s);
+		font-size:13px;
+		font-family:$defaultFont;
+		display:block;
+		color:$secColor;
+		padding:15px 10px;
+		list-style:none;
+		font-weight:bold;
+		text-decoration:none;
+		&:hover{
+			color:$mainColor
+		}
+		&.active{
+			background:$mainColor;
+			color:#fff;
+		}
+	}
+}
+
+#slide{
+	background: $mainColor;
+}
+
+#slide{
+	img{
+		width:100%;
+	}
+}
+
+/*******************************************************************************/
+/*     section
+/*******************************************************************************/
+
+#produk{
+	h2{
+		color:$mainColor;
+		// font-weight:normal;
+	}
+	article{
+		margin-bottom: 30px;
+		&:nth-of-type(4n+1){
+			&.zeen-3{
+				clear: left;
+				margin-left:0px;
+			}
+		}
+		// &:nth-of-type(6n+1){
+		// 	&.zeen-2{
+		// 		clear: left;
+		// 		margin-left:0px;
+		// 	}
+		// }	
+	}
+	a{
+		@include transition-duration(1s);
+		Color:#444;
+		text-decoration:none;
+		position:relative;
+		overflow: hidden;
+		.thumb{
+			position: relative;
+			z-index:-2;
+			img{
+				width:100%;
+			}
+			@include transition-duration(1s);
+			@include box-shadow(0 0 10px lighten(#444, 25%));
+
+			.beli{
+				@include tombol(#444);
+				@include transition-duration(1s);
+				position:absolute;
+				top:50px;
+				left:10px;
+				opacity:0;
+				z-index:99;
+			}
+			.detail{
+				@include tombol(#444);
+				@include transition-duration(1s);
+				position:absolute;
+				top:50px;
+				right:10px;
+				opacity:0;
+				z-index:99;
+			}
+		}
+
+		&:hover{
+			@include transition-duration(1s);
+			.thumb{
+				@include box-shadow(0 0 10px 1px #444);
+			}
+			.detail,.beli{
+				opacity:1;
+				top:10px;
+			}
+		}
+
+		h3{
+			color:#fff;
+			margin:0;
+			font-size:14px;
+			background:rgba($mainColor, 0.8);
+			position:absolute;
+			bottom:0;
+			left:0;
+			right:0;
+			padding:15px 10px;
+
+			span{
+				@include transition-duration(1s);
+				display:block;
+				line-height:20px;
+				&.harga{
+					font-weight:normal;
+					&:before{
+						content:"Rp. ";	
+					}
+
+				}
+
+				&.beli{
+					@include transition-duration(1s);
+					font-weight:normal;
+					margin-top:10px;
+					background:#444;
+					padding:5px;
+					@extend .kiri;
+					display:none;
+					
+					&:hover{
+						background:black;
+						color:red;
+					}
+				}
+
+				&.detail{
+					@extend .beli;
+					float:right !important;
+				}
+
+			}
+		}
+	}
+	
+}
+
+#paket{
+	@extend #produk;
+}
+/*******************************************************************************/
+/*     aside
+/*******************************************************************************/
+aside{
+	background: $mainColor;
+	color:white;
+	font-size:13px;
+	line-height:20px;
+	padding:25px 0;
+
+	section{
+		background: rgba(darken($mainColor, 15%), 0.8);
+		padding:10px;
+		margin: 10px 0;
+		color:#fff;
+	}
+}
+
+/*******************************************************************************/
+/*     footer
+/*******************************************************************************/
+
+footer{
+	background: darken($mainColor, 15%);
+	@extend aside;
+
+	#kredit{
+		text-align:right;
+		a{
+			display:inline-block;
+			margin-top:17px;
+			margin-left:10px;
+		}
+	}
+}
