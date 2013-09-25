@@ -331,9 +331,9 @@ img {
   width: 100%;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   .baris {
-    max-width: 767px;
+    max-width: 600px;
   }
   .baris [class*="zeen"] {
     width: 100%;
@@ -402,13 +402,13 @@ nav a.active {
   background: #aa0000;
 }
 
-/*******************************************************************************/
-/*     produk
-/*******************************************************************************/
 #slide img {
   width: 100%;
 }
 
+/*******************************************************************************/
+/*     section
+/*******************************************************************************/
 #produk h2, #paket h2 {
   color: #aa0000;
 }
@@ -795,7 +795,7 @@ footer #kredit a {
 /*******************************************************************************/
 /*     responsive
 /*******************************************************************************/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   .logo {
     display: block;
     float: none;
@@ -835,6 +835,12 @@ footer #kredit a {
     text-align: center;
   }
 
+  footer article {
+    text-align: center;
+  }
+  footer p {
+    text-align: center;
+  }
   footer #kredit {
     text-align: center;
   }
