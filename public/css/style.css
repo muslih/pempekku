@@ -416,16 +416,19 @@ nav a.active {
   clear: left;
   margin-left: 0px;
 }
-#produk article:nth-of-type(6n+1).zeen-2, #paket article:nth-of-type(6n+1).zeen-2 {
-  clear: left;
-  margin-left: 0px;
-}
-#produk article a, #paket article a {
+#produk a, #paket a {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
   Color: #444;
   text-decoration: none;
   position: relative;
+  overflow: hidden;
 }
-#produk article a .thumb, #paket article a .thumb {
+#produk a .thumb, #paket a .thumb {
+  position: relative;
+  z-index: -2;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
@@ -434,21 +437,21 @@ nav a.active {
   -moz-box-shadow: 0 0 10px #848484;
   box-shadow: 0 0 10px #848484;
 }
-#produk article a .thumb img, #paket article a .thumb img {
+#produk a .thumb img, #paket a .thumb img {
   width: 100%;
 }
-#produk article a:hover, #paket article a:hover {
+#produk a:hover, #paket a:hover {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-#produk article a:hover .thumb, #paket article a:hover .thumb {
+#produk a:hover .thumb, #paket a:hover .thumb {
   -webkit-box-shadow: 0 0 10px 1px #444444;
   -moz-box-shadow: 0 0 10px 1px #444444;
   box-shadow: 0 0 10px 1px #444444;
 }
-#produk article a h3, #paket article a h3 {
+#produk a h3, #paket a h3 {
   color: #fff;
   margin: 0;
   font-size: 14px;
@@ -459,7 +462,7 @@ nav a.active {
   right: 0;
   padding: 15px 5px;
 }
-#produk article a h3 span, #paket article a h3 span {
+#produk a h3 span, #paket a h3 span {
   display: block;
 }
 
@@ -718,26 +721,24 @@ footer #kredit a {
 /*     responsive
 /*******************************************************************************/
 @media only screen and (max-width: 767px) {
-  #logo {
+  .logo {
     display: block;
     float: none;
     text-align: center;
-    padding: 25px 0;
   }
 
   nav {
     display: block;
     float: none;
-  }
-  nav ul {
     text-align: center;
+    margin: 15px 0;
   }
   nav li {
     float: none;
     display: inline-block;
   }
   nav li a {
-    padding: 30px 5px 20px 5px;
+    padding: 5px;
   }
 
   #beli {
@@ -750,38 +751,5 @@ footer #kredit a {
   }
   #beli button {
     float: none;
-  }
-
-  #aside {
-    text-align: center;
-    padding-bottom: 0px;
-  }
-  #aside [class*="zeen"] {
-    margin-bottom: 25px;
-  }
-  #aside img {
-    margin: auto auto 15px auto;
-  }
-  #aside i {
-    float: none;
-  }
-  #aside p {
-    margin-left: 0;
-  }
-
-  #footer {
-    padding-bottom: 10px;
-  }
-  #footer p {
-    text-align: center;
-    clear: both;
-    width: 100%;
-  }
-  #footer .kredit {
-    float: none;
-    text-align: center;
-  }
-  #footer .kredit li {
-    margin-top: 15px;
   }
 }
