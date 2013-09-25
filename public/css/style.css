@@ -827,4 +827,15 @@ footer #kredit a {
   #beli button {
     float: none;
   }
+
+  aside article, footer article {
+    text-align: center;
+  }
+  aside p, footer p {
+    text-align: center;
+  }
+
+  footer #kredit {
+    text-align: center;
+  }
 }
