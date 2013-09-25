@@ -451,7 +451,7 @@ nav a.active {
   -o-transition-duration: 1s;
   transition-duration: 1s;
   position: absolute;
-  top: 10px;
+  top: 50px;
   left: 10px;
   opacity: 0;
   z-index: 99;
@@ -470,7 +470,7 @@ nav a.active {
   -o-transition-duration: 1s;
   transition-duration: 1s;
   position: absolute;
-  top: 10px;
+  top: 50px;
   right: 10px;
   opacity: 0;
   z-index: 99;
@@ -491,6 +491,7 @@ nav a.active {
 }
 #produk a:hover .detail, #paket a:hover .detail, #produk a:hover .beli, #paket a:hover .beli, #produk a:hover h3 span.detail, #paket a:hover h3 span.detail {
   opacity: 1;
+  top: 10px;
 }
 #produk a h3, #paket a h3 {
   color: #fff;
@@ -544,6 +545,7 @@ aside, footer {
   color: white;
   font-size: 13px;
   line-height: 20px;
+  padding: 25px 0;
 }
 aside section, footer section {
   background: rgba(93, 0, 0, 0.8);
