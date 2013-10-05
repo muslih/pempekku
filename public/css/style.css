@@ -367,7 +367,7 @@ header {
 }
 
 nav {
-  margin: 30px 0;
+  margin: 60px 0 0 0;
 }
 nav ul {
   margin: 0;
@@ -396,6 +396,38 @@ nav a:hover {
 nav a.active {
   background: #aa0000;
   color: #fff;
+}
+nav#atas {
+  position: absolute;
+  margin-top: 15px;
+  top: 0;
+  right: 0;
+}
+nav#atas a {
+  vertical-align: top;
+  padding: 15px 5px;
+  font-size: 12px;
+}
+nav#atas form {
+  margin-left: 5px;
+  margin-top: 8px;
+}
+nav#atas input {
+  width: 100px;
+  border: solid 1px #444;
+  font-size: 12px;
+  padding: 5px;
+}
+nav#atas button {
+  border: 0px solid;
+  background: #aa0000;
+  color: white;
+  padding: 5px;
+  font-size: 13px;
+  font-size: 12px;
+}
+nav#atas button:hover {
+  background: #770000;
 }
 
 #slide {
@@ -553,8 +585,13 @@ aside, footer {
 aside section, footer section {
   background: rgba(93, 0, 0, 0.8);
   padding: 10px;
-  margin: 10px 0;
   color: #fff;
+}
+aside blockquote, footer blockquote {
+  font-style: italic;
+}
+aside blockquote strong, footer blockquote strong {
+  display: block;
 }
 
 /*******************************************************************************/
@@ -562,6 +599,11 @@ aside section, footer section {
 /*******************************************************************************/
 footer {
   background: #5d0000;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 footer #kredit {
   text-align: right;
@@ -815,6 +857,9 @@ footer #kredit a {
   nav li a {
     padding: 5px;
   }
+  nav#atas {
+    display: none;
+  }
 }
 @media only screen and (max-width: 600px) {
   #beli {
@@ -844,5 +889,11 @@ footer #kredit a {
   }
   footer #kredit {
     text-align: center;
+  }
+}
+@media only screen and (max-width: 300px) {
+  nav li {
+    display: block;
+    float: none;
   }
 }
