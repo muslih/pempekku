@@ -31,7 +31,7 @@ header{
 
 nav{
 	@extend .kanan;
-	margin:30px 0;
+	margin:60px 0 0 0;
 	ul{
 		margin:0;
 	}
@@ -55,6 +55,35 @@ nav{
 		&.active{
 			background:$mainColor;
 			color:#fff;
+		}
+	}
+
+	&#atas{
+		position: absolute;
+		margin-top:15px;
+		top:0;
+		right:0;
+
+		a{
+			vertical-align:top;
+			padding:15px 5px;
+			font-size:12px
+		}
+
+		form{
+			margin-left:5px;
+			margin-top:8px;
+		}
+
+		input{
+			width:100px;
+			border:solid 1px #444;
+			font-size:12px;
+			padding:5px;
+		}
+		button{
+			@include tombol($mainColor,#fff);
+			font-size:12px;
 		}
 	}
 }
@@ -204,8 +233,15 @@ aside{
 	section{
 		background: rgba(darken($mainColor, 15%), 0.8);
 		padding:10px;
-		margin: 10px 0;
+		// margin: 10px 0;
 		color:#fff;
+	}
+
+	blockquote{
+		font-style:italic;
+		strong{
+			display:block;
+		}
 	}
 }
 
@@ -216,6 +252,12 @@ aside{
 footer{
 	background: darken($mainColor, 15%);
 	@extend aside;
+	// padding-bottom:20px;
+	a{
+		color:#fff;
+		text-decoration:none;
+		font-weight:bold;
+	}
 
 	#kredit{
 		text-align:right;
@@ -223,6 +265,7 @@ footer{
 			display:inline-block;
 			margin-top:17px;
 			margin-left:10px;
+			
 		}
 	}
 }
