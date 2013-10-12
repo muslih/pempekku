@@ -874,6 +874,9 @@ footer #kredit a {
     float: none;
   }
 
+  aside section, footer section {
+    margin-top: 20px;
+  }
   aside article, footer article {
     text-align: center;
   }
@@ -891,7 +894,11 @@ footer #kredit a {
     text-align: center;
   }
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 450px) {
+  #slide {
+    display: none;
+  }
+
   nav li {
     display: block;
     float: none;

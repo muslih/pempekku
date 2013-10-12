@@ -43,6 +43,9 @@
 	}
 	
 	aside{
+		section{
+			margin-top:20px;
+		}
 		article{
 			text-align:center;
 		}
@@ -65,7 +68,11 @@
 }
 
 
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 450px){
+
+	#slide{
+		display:none;
+	}
 	nav{
 		li{
 			display:block;
