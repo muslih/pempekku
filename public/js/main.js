@@ -21,17 +21,14 @@
   $(function() {
     var link;
     link = $('link');
+    console.log(link);
     return $('.respset button').click(function() {
       var $this, stylesheet;
       $this = $(this);
       stylesheet = $this.data('file');
       link.attr('href', 'public/css/' + stylesheet + '.css');
-      if (stylesheet = 'nostyle') {
-        $('.bungkus').css('width', '978px');
-      } else {
-        $('.bungkus').css('width', '100%');
-        window.location.reload();
-      }
+      $this.css('display', 'none');
+      $this.siblings('button').css('display', 'block');
       $this.siblings('button').removeAttr('disabled').end().attr('disabled', 'disabled');
       return $this;
     });

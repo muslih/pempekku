@@ -260,7 +260,7 @@ img {
 }
 
 .baris {
-  width: 100%;
+  width: 978px;
   margin: 0 auto;
   position: relative;
   max-width: 978px;
@@ -334,6 +334,13 @@ img {
 /*******************************************************************************/
 /*     general
 /*******************************************************************************/
+body {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
 .kanan, nav {
   float: right;
 }
