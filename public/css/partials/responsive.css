@@ -1,0 +1,85 @@
+/*******************************************************************************/
+/*     responsive
+/*******************************************************************************/
+@media only screen and (max-width: 600px) {
+  .baris {
+    max-width: 600px;
+  }
+  .baris [class*="zeen"] {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .logo {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+
+  .respset {
+    display: block;
+    top: 10px;
+    right: 10px;
+  }
+
+  nav {
+    display: block;
+    float: none;
+    text-align: center;
+    margin: 15px 0;
+  }
+  nav li {
+    float: none;
+    display: inline-block;
+  }
+  nav li a {
+    padding: 5px;
+  }
+  nav#atas {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #beli {
+    text-align: center;
+  }
+  #beli p {
+    width: 100%;
+    clear: both;
+    margin-bottom: 10px;
+  }
+  #beli button {
+    float: none;
+  }
+
+  aside section {
+    margin-top: 20px;
+  }
+  aside article {
+    text-align: center;
+  }
+  aside p {
+    text-align: center;
+  }
+
+  footer article {
+    text-align: center;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer #kredit {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #slide {
+    display: none;
+  }
+
+  nav li {
+    display: block;
+    float: none;
+  }
+}
