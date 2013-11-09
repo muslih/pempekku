@@ -15,6 +15,12 @@
   });
 
   $(function() {
+    return $('.keranjang').hover(function() {
+      return $('.belanja').slideToggle();
+    });
+  });
+
+  $(function() {
     return $('.respset').css('display', 'block');
   });
 

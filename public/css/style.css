@@ -428,6 +428,56 @@ nav#atas button:hover {
   background: #770000;
 }
 
+.keranjang {
+  position: relative;
+}
+.keranjang .belanja {
+  overflow: hidden;
+  display: none;
+  position: absolute;
+  right: 0;
+  z-index: 80;
+  background: #fff;
+}
+.keranjang ul {
+  padding: 0;
+}
+.keranjang li {
+  width: 100%;
+  border-bottom: solid 1px #eee;
+  display: block;
+  padding: 5px 10px;
+  color: #aa0000;
+  font-size: 13px;
+  line-height: 20px;
+}
+.keranjang li span {
+  color: #444;
+  display: block;
+}
+.keranjang li.total {
+  color: #444;
+  font-weight: bold;
+}
+.keranjang li.total span {
+  margin-top: 3px;
+}
+.keranjang li.total a {
+  background: #aa0000;
+  font-size: 11px;
+  padding: 2px 5px;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  float: left;
+}
+.keranjang li.total a:hover {
+  background: #dd0000;
+}
+
 #slide {
   background: #aa0000;
 }

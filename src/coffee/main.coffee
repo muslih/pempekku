@@ -19,6 +19,9 @@ $ ->
 		else
 			$('#nav li').first ->
 				a.addClass('active')
+$ ->
+	$('.keranjang').hover ->
+		$('.belanja').slideToggle()
 
 
 $ ->
@@ -53,6 +56,8 @@ $ ->
 			.end()
 			.attr('disabled', 'disabled');
 		$this
+
+
 
 
 	

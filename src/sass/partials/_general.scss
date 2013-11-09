@@ -91,6 +91,62 @@ nav{
 	}
 }
 
+.keranjang{
+	
+	position: relative;
+	// &:hover>div{
+	// 	@include transition-duration(0.5s);
+	// 	height:auto;
+	// }
+	.belanja{
+		// @include transition-duration(0.5s);
+		// height:0px;
+		overflow: hidden;
+		display:none;		
+		position:absolute;
+		right:0;
+		z-index: 80;
+		background:#fff;
+	}
+	ul{
+		padding:0;
+	}
+	li{
+		width:100%;
+
+		border-bottom:solid 1px #eee;
+		display:block;
+		padding:5px 10px;
+		color:$mainColor;
+		font-size:13px;
+		line-height:20px;
+		span{
+			color:#444;
+			display:block;
+		}
+		&.total{
+			color:#444;
+			font-weight:bold;
+		}
+		&.total{
+			span{
+				margin-top:3px;
+			}
+			a{
+				background:$mainColor;
+				font-size:11px;
+				padding:2px 5px;
+				color:#fff;
+				@include border-radius(5px);
+				float: left;
+				&:hover{
+					background:lighten($mainColor, 10%)
+				}
+			}
+		}
+	}
+}
+
 #slide{
 	background: $mainColor;
 }
