@@ -26,20 +26,26 @@ $ ->
 
 $ ->
 	link = $('link')
+	console.log(link)
 	$('.respset button').click ->
 		
-
 		$this = $(@)
 		stylesheet = $this.data('file')
 		# console.log(stylesheet)
 
 		link.attr('href', 'public/css/' + stylesheet + '.css')
 
-		if stylesheet = 'nostyle'
-			$('.bungkus').css('width','978px')
-		else
-			$('.bungkus').css('width','100%')
-			window.location.reload()
+		# if stylesheet = 'nostyle'
+		# 	$('.bungkus').css('width','978px')
+		# else if stylesheet = 'style'
+		# 	$('.bungkus').removeAttribute('width')
+		# 	location.reload()
+		# else
+		# 	location.reload()
+
+		$this.css('display','none')
+
+		$this.siblings('button').css('display','block')
 
 		$this
 			.siblings('button')
@@ -47,5 +53,6 @@ $ ->
 			.end()
 			.attr('disabled', 'disabled');
 		$this
+
 
 	
