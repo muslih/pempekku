@@ -98,6 +98,27 @@ nav{
 	}
 }
 
+.respset{
+	display:none;
+	position:fixed;
+	right:5px;
+	bottom:5px;
+	list-style-type: none;
+	font-family:$defaultFont;
+	z-index:99;
+	button{
+		display:block;
+		border:solid 1px #fff;
+		margin-bottom:10px;
+		font-size:12px;
+		padding:5px;
+		@include border-radius(5px);
+		text-decoration:none;
+		color:#fff;
+		background:$mainColor;
+	}
+}
+
 /*******************************************************************************/
 /*     section
 /*******************************************************************************/
