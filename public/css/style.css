@@ -451,6 +451,13 @@ nav#atas button:hover {
   font-size: 13px;
   line-height: 20px;
 }
+.keranjang li:hover {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: #f2f2f2;
+}
 .keranjang li span {
   color: #444;
   display: block;

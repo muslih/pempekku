@@ -120,6 +120,10 @@ nav{
 		color:$mainColor;
 		font-size:13px;
 		line-height:20px;
+		&:hover{
+			@include transition-duration(0.5s);
+			background:darken(#fff, 5%)
+		}
 		span{
 			color:#444;
 			display:block;
