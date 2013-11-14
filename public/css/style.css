@@ -341,6 +341,12 @@ body {
   transition-duration: 0.5s;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .kanan, nav {
   float: right;
 }
@@ -353,8 +359,41 @@ body {
   text-align: right;
 }
 
+input {
+  border: none;
+  padding: 5px;
+  border: solid 1px #d4d4d4;
+}
+
 .judul {
   font-family: "Muli", sans-serif;
+}
+
+.tableStyle {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  width: 100%;
+}
+.tableStyle th {
+  padding: 5px;
+  text-align: left;
+  background: #c30000;
+  color: #fff;
+}
+.tableStyle td {
+  padding: 5px;
+  border-bottom: solid 1px #c30000;
+}
+.tableStyle tr {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.tableStyle tr:hover {
+  background: #fbfbfb;
 }
 
 /*******************************************************************************/
@@ -362,6 +401,9 @@ body {
 /*******************************************************************************/
 header {
   position: relative;
+}
+header .baris {
+  border-bottom: solid 1px #eee;
 }
 
 nav {
@@ -417,11 +459,19 @@ nav#atas input {
   padding: 5px;
 }
 nav#atas button {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   border: 0px solid;
   background: #aa0000;
   color: white;
-  padding: 5px;
   font-size: 13px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
   font-size: 12px;
 }
 nav#atas button:hover {
@@ -531,17 +581,11 @@ nav#atas button:hover {
   clear: left;
   margin-left: 0px;
 }
-#produk a, #paket a {
+#produk .thumb, #paket .thumb {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
-  Color: #444;
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-}
-#produk a .thumb, #paket a .thumb {
   position: relative;
   z-index: -2;
   -webkit-transition-duration: 1s;
@@ -552,15 +596,28 @@ nav#atas button:hover {
   -moz-box-shadow: 0 0 10px #848484;
   box-shadow: 0 0 10px #848484;
 }
-#produk a .thumb img, #paket a .thumb img {
+#produk .thumb:hover, #paket .thumb:hover {
+  -webkit-box-shadow: 0 0 10px 1px #444444;
+  -moz-box-shadow: 0 0 10px 1px #444444;
+  box-shadow: 0 0 10px 1px #444444;
+}
+#produk .thumb img, #paket .thumb img {
   width: 100%;
 }
-#produk a .thumb .beli, #paket a .thumb .beli, #produk a .thumb h3 span.detail, #produk a h3 .thumb span.detail, #paket a .thumb h3 span.detail, #paket a h3 .thumb span.detail {
+#produk .thumb .beli, #paket .thumb .beli, #produk .thumb a h3 span.detail, #produk a h3 .thumb span.detail, #paket .thumb a h3 span.detail, #paket a h3 .thumb span.detail {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   border: 0px solid;
   background: #444444;
   color: white;
-  padding: 5px;
   font-size: 13px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
@@ -571,15 +628,23 @@ nav#atas button:hover {
   opacity: 0;
   z-index: 99;
 }
-#produk a .thumb .beli:hover, #paket a .thumb .beli:hover, #produk a .thumb h3 span.detail:hover, #produk a h3 .thumb span.detail:hover, #paket a .thumb h3 span.detail:hover, #paket a h3 .thumb span.detail:hover {
+#produk .thumb .beli:hover, #paket .thumb .beli:hover, #produk .thumb a h3 span.detail:hover, #produk a h3 .thumb span.detail:hover, #paket .thumb a h3 span.detail:hover, #paket a h3 .thumb span.detail:hover {
   background: #2b2b2b;
 }
-#produk a .thumb .detail, #paket a .thumb .detail {
+#produk .thumb .detail, #paket .thumb .detail {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   border: 0px solid;
   background: #444444;
   color: white;
-  padding: 5px;
   font-size: 13px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
@@ -590,8 +655,103 @@ nav#atas button:hover {
   opacity: 0;
   z-index: 99;
 }
-#produk a .thumb .detail:hover, #paket a .thumb .detail:hover {
+#produk .thumb .detail:hover, #paket .thumb .detail:hover {
   background: #2b2b2b;
+}
+#produk p, #paket p, #produk input, #paket input, #produk td, #paket td, #produk li, #paket li, #produk .tableStyle th, .tableStyle #produk th, #paket .tableStyle th, .tableStyle #paket th {
+  font-size: 14px;
+  line-height: 20px;
+}
+#produk .hargaDetail, #paket .hargaDetail {
+  text-align: center;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: green;
+}
+#produk .hargaDetail p, #paket .hargaDetail p, #produk .hargaDetail input, #paket .hargaDetail input, #produk .hargaDetail td, #paket .hargaDetail td, #produk .hargaDetail li, #paket .hargaDetail li, #produk .hargaDetail .tableStyle th, .tableStyle #produk .hargaDetail th, #paket .hargaDetail .tableStyle th, .tableStyle #paket .hargaDetail th {
+  font-size: 17px;
+}
+#produk .hargaDetail p:before, #paket .hargaDetail p:before, #produk .hargaDetail input:before, #paket .hargaDetail input:before, #produk .hargaDetail td:before, #paket .hargaDetail td:before, #produk .hargaDetail li:before, #paket .hargaDetail li:before, #produk .hargaDetail .tableStyle th:before, .tableStyle #produk .hargaDetail th:before, #paket .hargaDetail .tableStyle th:before, .tableStyle #paket .hargaDetail th:before {
+  content: "Rp. ";
+}
+#produk .hargaDetail p:after, #paket .hargaDetail p:after, #produk .hargaDetail input:after, #paket .hargaDetail input:after, #produk .hargaDetail td:after, #paket .hargaDetail td:after, #produk .hargaDetail li:after, #paket .hargaDetail li:after, #produk .hargaDetail .tableStyle th:after, .tableStyle #produk .hargaDetail th:after, #paket .hargaDetail .tableStyle th:after, .tableStyle #paket .hargaDetail th:after {
+  content: ",-";
+}
+#produk .beli, #paket .beli, #produk a h3 span.detail, #paket a h3 span.detail {
+  background: #f6f6f6;
+  border: solid 1px #eee;
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+#produk .beli input, #paket .beli input, #produk a h3 span.detail input, #paket a h3 span.detail input {
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+  border: none;
+}
+#produk .formKuantitas div, #paket .formKuantitas div {
+  position: relative;
+}
+#produk .formKuantitas div input, #paket .formKuantitas div input {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#produk .formKuantitas div .button, #paket .formKuantitas div .button {
+  background: #aa0000;
+  padding: 5px;
+  font-size: 13px;
+  float: left;
+  width: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+#produk .formKuantitas div .inc, #paket .formKuantitas div .inc {
+  postion: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+#produk .formKuantitas div .dec, #paket .formKuantitas div .dec {
+  postion: absolute;
+  top: 0;
+  left: 50px;
+  border-radius: 0 3px 3px 0;
+}
+#produk .formKuantitas div button, #paket .formKuantitas div button {
+  padding: 6px 15px;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  border: 0px solid;
+  background: #aa0000;
+  color: white;
+  font-size: 13px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+#produk .formKuantitas div button:hover, #paket .formKuantitas div button:hover {
+  background: #770000;
+}
+#produk .formKuantitas button, #paket .formKuantitas button {
+  float: right;
+}
+#produk a, #paket a {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  Color: #444;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
 }
 #produk a:hover, #paket a:hover {
   -webkit-transition-duration: 1s;
@@ -954,7 +1114,7 @@ footer #kredit a {
   #beli {
     text-align: center;
   }
-  #beli p {
+  #beli p, #beli input, #beli td, #beli li, #beli .tableStyle th, .tableStyle #beli th {
     width: 100%;
     clear: both;
     margin-bottom: 10px;
@@ -969,14 +1129,14 @@ footer #kredit a {
   aside article, footer article {
     text-align: center;
   }
-  aside p, footer p {
+  aside p, footer p, aside input, footer input, aside td, footer td, aside li, footer li, aside .tableStyle th, .tableStyle aside th, footer .tableStyle th, .tableStyle footer th, aside .tableStyle td, .tableStyle aside td, footer .tableStyle td, .tableStyle footer td {
     text-align: center;
   }
 
   footer article {
     text-align: center;
   }
-  footer p {
+  footer p, footer input, footer td, footer li, footer .tableStyle th, .tableStyle footer th, footer .tableStyle td, .tableStyle footer td {
     text-align: center;
   }
   footer #kredit {

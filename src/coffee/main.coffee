@@ -57,6 +57,21 @@ $ ->
 			.attr('disabled', 'disabled');
 		$this
 
+$ ->
+	$('.formKuantitas div').append('<div class="inc button">+</div><div class="dec button">-</div>')
+
+	$('.formKuantitas .button').click ->
+		$tombol = $(@)
+		nilai = $tombol.parent().find('input').val()
+		if $tombol.text() == '+'
+			nilaiBaru = parseFloat(nilai) + 1
+		else
+			if nilai > 0
+				nilaiBaru = parseFloat(nilai) - 1
+			else
+				nilaiBaru = 0
+
+		$tombol.parent().find('input').val(nilaiBaru)
 
 
 
